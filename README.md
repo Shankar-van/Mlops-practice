@@ -1,2 +1,2 @@
 # Mlops-practice
-This is only for Practice and deleted later 
+This is only for Practice and will be deleted later 
