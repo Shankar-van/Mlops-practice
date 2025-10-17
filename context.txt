@@ -1,0 +1,12 @@
+1. class -object(example)
+2. class has data attribute and func /methods 
+      > Code walkthrough
+      > Attributes get called itself , methods are called Manually   
+3. Why python is called Object oriented Programming languague?  Everything in python is an object
+      whether it is datastructure , data type etc.
+
+4. Advantages of  oops:
+        > you can create  your own datatype 
+        > code Reusability 
+        > debugging
+        > easy to colab
