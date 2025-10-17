@@ -10,17 +10,19 @@ class chatbook:
         user_input = input("""" Wellcome to chatbook !! How would you like to proceed?
                            1. Press 1 to Signup
                            2. Press 2 to Signin
-                           3. Press 1 to write a post
+                           3. Press 3 to write a post
                            4. press 4 to message a Friend 
-                           5. press any other key to exit \n""""")   
-        if user_input == "1" :
+                           5. press any other key to exit
+
+                           -> """"")   
+        if user_input == "1":
             self.signup()
         elif user_input == "2":
             self.signin()
         elif user_input == "3":
-            pass
+            self.my_post()
         elif user_input == "4":
-            pass
+            self.sendmsg()
         else:
             exit()
 
@@ -45,5 +47,26 @@ class chatbook:
                 print("Please input correct credentials...")
         print("\n")
         self.menu()
+    
+    def my_post(self):
+        if self.loggedin == True:
+            txt = input("Enter your Message Here ->")
+            print(f"your are following Content has been Posted -> {txt}")
+        else:
+            print("You need to Signin first too post somethhing....")
+        print("\n")
+        self.menu()  
+
+    def sendmsg(self):
+        if self.loggedin == True:
+             txt = input("Enter your Message Here ->")
+             frnd = input("Whom to send the meessage -> ")
+             print(f"Your messagee has been send to {frnd}")
+        else:
+            print("You need to Signin first too post somethhing....")
+        print("\n")
+        self.menu()  
+
+             
 
 obj = chatbook()
