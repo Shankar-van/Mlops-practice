@@ -2,11 +2,12 @@
 class employee:
     # special method /magic method /dunder method-  constructor
     def __init__(self):
-        print("Started Execuring Attriibutes/Data")
+        print(id(self))
+        # print("Started Execuring Attriibutes/Data")
         self.id = 1
         self.salary = 50000
         self.designation = "sde"
-        print("Attriibutes/Datahave been Initiated")
+        # print("Attriibutes/Datahave been Initiated")
 
     def travel(self,destination):
         print("this Traelled function was called Manually")
@@ -14,9 +15,16 @@ class employee:
 
 # create an object /instancee of the class 
 sam = employee()
+sam.name= 'Sam Kumar'
+
+# shakthiman =  employee()
+# print(id(sam))
+# print(id(shakthiman))
+
+
 # calling a method 
 # sam.travel("chennai")
 
 # print(sam.designation)
 
-print(type(sam))
+# print(type(sam))

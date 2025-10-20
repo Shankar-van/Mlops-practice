@@ -13,7 +13,13 @@
 
 
 5. End to End project (chat book project)
+    > function vs method 
+    > magic method or dunder method
+    > self
+    > you can Create Attribute outside class as well 
+
+
     > encapsulatioon
     > getter and setter
     > static method 
-    
+
