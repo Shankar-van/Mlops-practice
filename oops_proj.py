@@ -59,6 +59,8 @@ class chatbook:
         print("you have signed up sucessfully !!")
         print("\n")
         self.menu()
+
+
     def signin(self):
         if self.username =='' and self.password == '':
             print("please sign up first by pressing 1 in the main menu ")
@@ -81,6 +83,8 @@ class chatbook:
             print("You need to Signin first too post somethhing....")
         print("\n")
         self.menu()  
+
+
 
     def sendmsg(self):
         if self.loggedin == True:
